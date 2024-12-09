@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://cdicj1t7qb2dv"]
+
+[ext_resource type="Texture2D" uid="uid://b858vjxqyhwri" path="res://sprites/backg.png" id="1_oyrqd"]
+[ext_resource type="Script" path="res://retu.gd" id="2_8ehhs"]
+
+[node name="instructions" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(2.94474, 2.04642)
+texture = ExtResource("1_oyrqd")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 140.0
+offset_top = 68.0
+offset_right = 180.0
+offset_bottom = 91.0
+scale = Vector2(4.26712, 5.44038)
+text = "Instructions"
+
+[node name="Label" type="Label" parent="Label"]
+layout_mode = 0
+offset_left = 17.8106
+offset_top = 33.4535
+offset_right = 57.8106
+offset_bottom = 56.4535
+text = "Each button corresponds to a number on the
+keyboard(1-0), use this to play the sounds,
+use the mouse to interact with the volume slider"
+
+[node name="retu" type="Button" parent="."]
+offset_left = 1238.0
+offset_top = 886.0
+offset_right = 1409.0
+offset_bottom = 922.0
+scale = Vector2(3.5211, 3.2139)
+text = "return to main menu"
+script = ExtResource("2_8ehhs")
+
+[connection signal="pressed" from="retu" to="retu" method="_on_pressed"]

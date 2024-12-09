@@ -1,0 +1,62 @@
+[gd_scene load_steps=3 format=3 uid="uid://n7rf7kkbg6vl"]
+
+[ext_resource type="Script" path="res://title_screen.gd" id="1_r27ev"]
+[ext_resource type="Texture2D" uid="uid://tpve0bapg6ti" path="res://sprites/background png.png" id="2_uv6yf"]
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_r27ev")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -168.0
+offset_top = -5.0
+offset_right = 1875.0
+offset_bottom = 1042.0
+scale = Vector2(1.05279, 1.04262)
+texture = ExtResource("2_uv6yf")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = 134.0
+offset_top = 231.0
+offset_right = 184.0
+offset_bottom = 309.0
+scale = Vector2(2.6, 2.6)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Play" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Play"
+
+[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Quit
+"
+
+[node name="instructions" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "How to use
+"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 641.0
+offset_top = 673.0
+offset_right = 870.0
+offset_bottom = 714.0
+scale = Vector2(2.28734, 2.64194)
+text = "Audio Player Project"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/instructions" to="." method="_on_instructions_pressed"]

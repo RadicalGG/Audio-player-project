@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dt3c0actjj75b"
+path="res://.godot/imported/among us.mp3-c250a3a92968b53831da76149ca2159a.mp3str"
+
+[deps]
+
+source_file="res://Audio/among us.mp3"
+dest_files=["res://.godot/imported/among us.mp3-c250a3a92968b53831da76149ca2159a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

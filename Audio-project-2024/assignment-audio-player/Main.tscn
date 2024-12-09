@@ -1,0 +1,172 @@
+[gd_scene load_steps=25 format=3 uid="uid://c2ebqjoc6sm24"]
+
+[ext_resource type="Texture2D" uid="uid://nlinopikd130" path="res://sprites/background.png" id="1_3onbs"]
+[ext_resource type="Texture2D" uid="uid://crin1c31hsm77" path="res://sprites/Button/but1.png" id="1_06ms7"]
+[ext_resource type="Script" path="res://sprite_2d.gd" id="2_3exi8"]
+[ext_resource type="Texture2D" uid="uid://denhbcnrc1fgx" path="res://sprites/Button/but2.png" id="3_evs24"]
+[ext_resource type="AudioStream" uid="uid://cf1ofpu3ke42x" path="res://Audio/Toy_button.mp3" id="3_jls6w"]
+[ext_resource type="AudioStream" uid="uid://dl43ajnx0uwec" path="res://Audio/Quack.mp3" id="4_4ng8e"]
+[ext_resource type="AudioStream" uid="uid://b3724wwx1uav4" path="res://Audio/metal pipe.mp3" id="4_cl3w4"]
+[ext_resource type="Texture2D" uid="uid://bb1teqcvf0yqx" path="res://sprites/Button/but3.png" id="4_xk76r"]
+[ext_resource type="AudioStream" uid="uid://dsul3bwyhrd0r" path="res://Audio/explosion.mp3" id="5_j3ym1"]
+[ext_resource type="Texture2D" uid="uid://c62rb47wcu3hh" path="res://sprites/Button/but4.png" id="5_mfb0r"]
+[ext_resource type="AudioStream" uid="uid://dt3c0actjj75b" path="res://Audio/among us.mp3" id="6_84ejv"]
+[ext_resource type="Texture2D" uid="uid://b52utlr3k3w7g" path="res://sprites/Button/but5.png" id="6_spbff"]
+[ext_resource type="Texture2D" uid="uid://lply3a7vyq60" path="res://sprites/Button/but6.png" id="7_3l3rk"]
+[ext_resource type="AudioStream" uid="uid://d1aa0m3mgfkbh" path="res://Audio/drum.mp3" id="7_av1rt"]
+[ext_resource type="Texture2D" uid="uid://rnuxemgs8nef" path="res://sprites/Button/but7.png" id="8_1qwci"]
+[ext_resource type="AudioStream" uid="uid://dyqf5gyeqy2cr" path="res://Audio/hammer.mp3" id="8_t72lo"]
+[ext_resource type="AudioStream" uid="uid://bmhs1rluteg0s" path="res://Audio/laser.mp3" id="9_3nm2m"]
+[ext_resource type="Texture2D" uid="uid://cbs3v5ev31iyb" path="res://sprites/Button/but8.png" id="9_miumu"]
+[ext_resource type="Texture2D" uid="uid://c6l2hyfyn7hh3" path="res://sprites/Button/but9.png" id="10_50vkc"]
+[ext_resource type="AudioStream" uid="uid://d0355rd8eklux" path="res://Audio/laugh.mp3" id="10_m2l0q"]
+[ext_resource type="AudioStream" uid="uid://c1do47falpa2m" path="res://Audio/phone ring.mp3" id="11_hh2gh"]
+[ext_resource type="Texture2D" uid="uid://dqebuooenvdjw" path="res://sprites/Button/but10.png" id="11_r3pc3"]
+[ext_resource type="Script" path="res://h_slider.gd" id="22_yq1xm"]
+[ext_resource type="Script" path="res://return_button.gd" id="24_bidq6"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(444, 204)
+
+[node name="backg" type="TextureRect" parent="."]
+offset_left = -502.0
+offset_top = -203.0
+offset_right = 1488.0
+offset_bottom = 716.0
+texture = ExtResource("1_3onbs")
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." node_paths=PackedStringArray("sound")]
+position = Vector2(-69, 93)
+texture = ExtResource("1_06ms7")
+script = ExtResource("2_3exi8")
+keybind = "1"
+sound = NodePath("../Node2D/sound1")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." node_paths=PackedStringArray("sound")]
+position = Vector2(299, 94)
+texture = ExtResource("3_evs24")
+script = ExtResource("2_3exi8")
+keybind = "2"
+sound = NodePath("../Node2D/sound2")
+
+[node name="Sprite2D3" type="Sprite2D" parent="." node_paths=PackedStringArray("sound")]
+position = Vector2(664, 89)
+texture = ExtResource("4_xk76r")
+script = ExtResource("2_3exi8")
+keybind = "3"
+sound = NodePath("../Node2D/sound3")
+
+[node name="Sprite2D4" type="Sprite2D" parent="." node_paths=PackedStringArray("sound")]
+position = Vector2(984, 90)
+texture = ExtResource("5_mfb0r")
+script = ExtResource("2_3exi8")
+keybind = "4"
+sound = NodePath("../Node2D/sound4")
+
+[node name="Sprite2D5" type="Sprite2D" parent="." node_paths=PackedStringArray("sound")]
+position = Vector2(-74, 273)
+texture = ExtResource("6_spbff")
+script = ExtResource("2_3exi8")
+keybind = "5"
+sound = NodePath("../Node2D/sound5")
+
+[node name="Sprite2D6" type="Sprite2D" parent="." node_paths=PackedStringArray("sound")]
+position = Vector2(297, 282)
+texture = ExtResource("7_3l3rk")
+script = ExtResource("2_3exi8")
+keybind = "6"
+sound = NodePath("../Node2D/sound6")
+
+[node name="Sprite2D7" type="Sprite2D" parent="." node_paths=PackedStringArray("sound")]
+position = Vector2(651, 286)
+texture = ExtResource("8_1qwci")
+script = ExtResource("2_3exi8")
+keybind = "7"
+sound = NodePath("../Node2D/sound7")
+
+[node name="Sprite2D8" type="Sprite2D" parent="." node_paths=PackedStringArray("sound")]
+position = Vector2(983, 281)
+texture = ExtResource("9_miumu")
+script = ExtResource("2_3exi8")
+keybind = "8"
+sound = NodePath("../Node2D/sound8")
+
+[node name="Sprite2D9" type="Sprite2D" parent="." node_paths=PackedStringArray("sound")]
+position = Vector2(97, 501)
+texture = ExtResource("10_50vkc")
+script = ExtResource("2_3exi8")
+keybind = "9"
+sound = NodePath("../Node2D/sound9")
+
+[node name="Sprite2D10" type="Sprite2D" parent="." node_paths=PackedStringArray("sound")]
+position = Vector2(832, 500)
+texture = ExtResource("11_r3pc3")
+script = ExtResource("2_3exi8")
+keybind = "0"
+sound = NodePath("../Node2D/sound10")
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="sound1" type="AudioStreamPlayer" parent="Node2D"]
+stream = ExtResource("3_jls6w")
+
+[node name="sound2" type="AudioStreamPlayer" parent="Node2D"]
+stream = ExtResource("4_4ng8e")
+
+[node name="sound3" type="AudioStreamPlayer" parent="Node2D"]
+stream = ExtResource("5_j3ym1")
+
+[node name="sound4" type="AudioStreamPlayer" parent="Node2D"]
+stream = ExtResource("6_84ejv")
+
+[node name="sound5" type="AudioStreamPlayer" parent="Node2D"]
+stream = ExtResource("7_av1rt")
+
+[node name="sound6" type="AudioStreamPlayer" parent="Node2D"]
+stream = ExtResource("8_t72lo")
+
+[node name="sound7" type="AudioStreamPlayer" parent="Node2D"]
+stream = ExtResource("9_3nm2m")
+
+[node name="sound8" type="AudioStreamPlayer" parent="Node2D"]
+stream = ExtResource("10_m2l0q")
+
+[node name="sound9" type="AudioStreamPlayer" parent="Node2D"]
+stream = ExtResource("11_hh2gh")
+
+[node name="sound10" type="AudioStreamPlayer" parent="Node2D"]
+stream = ExtResource("4_cl3w4")
+
+[node name="HSlider" type="HSlider" parent="."]
+offset_left = -204.0
+offset_top = 770.0
+offset_right = -45.0
+offset_bottom = 786.0
+max_value = 3.0
+step = 0.001
+script = ExtResource("22_yq1xm")
+bus_name = "Master"
+metadata/_edit_use_anchors_ = true
+
+[node name="volume label" type="Label" parent="HSlider"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = -55.0
+offset_right = 74.0
+offset_bottom = -32.0
+scale = Vector2(2.2, 1.84)
+text = "VOLUME"
+metadata/_edit_use_anchors_ = true
+
+[node name="return button" type="Button" parent="."]
+offset_left = 1045.0
+offset_top = 731.0
+offset_right = 1219.0
+offset_bottom = 762.0
+scale = Vector2(2.08, 2.16)
+text = "Return to main menu"
+script = ExtResource("24_bidq6")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="return button" to="return button" method="_on_pressed"]
